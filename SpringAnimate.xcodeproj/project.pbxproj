@@ -55,6 +55,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		950F16E426FBB55B00085A0D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95CA394426FB262800267DEE /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		950F16E526FBB56800085A0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95CA395426FB2F9D00267DEE /* Animate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		950F16E626FBB56E00085A0D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				950F16E226FB85F900085A0D /* DataAnimation.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		950F16E726FBB57600085A0D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				95CA394626FB262800267DEE /* Main.storyboard */,
+				95CA394B26FB262900267DEE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		95CA393426FB262800267DEE = {
 			isa = PBXGroup;
 			children = (
@@ -78,12 +111,11 @@
 			children = (
 				95CA394026FB262800267DEE /* AppDelegate.swift */,
 				95CA394226FB262800267DEE /* SceneDelegate.swift */,
-				95CA394426FB262800267DEE /* MainViewController.swift */,
-				95CA395426FB2F9D00267DEE /* Animate.swift */,
-				950F16E226FB85F900085A0D /* DataAnimation.swift */,
-				95CA394626FB262800267DEE /* Main.storyboard */,
+				950F16E426FBB55B00085A0D /* ViewControllers */,
+				950F16E526FBB56800085A0D /* Models */,
+				950F16E626FBB56E00085A0D /* Services */,
+				950F16E726FBB57600085A0D /* Storyboard */,
 				95CA394926FB262900267DEE /* Assets.xcassets */,
-				95CA394B26FB262900267DEE /* LaunchScreen.storyboard */,
 				95CA394E26FB262900267DEE /* Info.plist */,
 			);
 			path = SpringAnimate;
