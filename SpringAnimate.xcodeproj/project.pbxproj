@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950F16E326FB85F900085A0D /* DataAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F16E226FB85F900085A0D /* DataAnimation.swift */; };
 		95CA394126FB262800267DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA394026FB262800267DEE /* AppDelegate.swift */; };
 		95CA394326FB262800267DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA394226FB262800267DEE /* SceneDelegate.swift */; };
-		95CA394526FB262800267DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA394426FB262800267DEE /* ViewController.swift */; };
+		95CA394526FB262800267DEE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA394426FB262800267DEE /* MainViewController.swift */; };
 		95CA394826FB262800267DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CA394626FB262800267DEE /* Main.storyboard */; };
 		95CA394A26FB262900267DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CA394926FB262900267DEE /* Assets.xcassets */; };
 		95CA394D26FB262900267DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CA394B26FB262900267DEE /* LaunchScreen.storyboard */; };
+		95CA395526FB2F9D00267DEE /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA395426FB2F9D00267DEE /* Animate.swift */; };
+		D9EFE7E2F3E711D0BF072C83 /* Pods_SpringAnimate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F645B056BF6B9A7807D54 /* Pods_SpringAnimate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437F645B056BF6B9A7807D54 /* Pods_SpringAnimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringAnimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950F16E226FB85F900085A0D /* DataAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnimation.swift; sourceTree = "<group>"; };
 		95CA393D26FB262800267DEE /* SpringAnimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CA394026FB262800267DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95CA394226FB262800267DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95CA394426FB262800267DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95CA394426FB262800267DEE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		95CA394726FB262800267DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95CA394926FB262900267DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95CA394C26FB262900267DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95CA394E26FB262900267DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95CA395426FB2F9D00267DEE /* Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
+		B4BA9BD1C15569BC8FA6486C /* Pods-SpringAnimate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringAnimate.debug.xcconfig"; path = "Target Support Files/Pods-SpringAnimate/Pods-SpringAnimate.debug.xcconfig"; sourceTree = "<group>"; };
+		DDEB89398CC4E26A636CEBF7 /* Pods-SpringAnimate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringAnimate.release.xcconfig"; path = "Target Support Files/Pods-SpringAnimate/Pods-SpringAnimate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EFE7E2F3E711D0BF072C83 /* Pods_SpringAnimate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11F26E84EBEE578572C35AC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA9BD1C15569BC8FA6486C /* Pods-SpringAnimate.debug.xcconfig */,
+				DDEB89398CC4E26A636CEBF7 /* Pods-SpringAnimate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95CA393426FB262800267DEE = {
 			isa = PBXGroup;
 			children = (
 				95CA393F26FB262800267DEE /* SpringAnimate */,
 				95CA393E26FB262800267DEE /* Products */,
+				11F26E84EBEE578572C35AC1 /* Pods */,
+				FD1C81FBE72AE857141702E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +78,23 @@
 			children = (
 				95CA394026FB262800267DEE /* AppDelegate.swift */,
 				95CA394226FB262800267DEE /* SceneDelegate.swift */,
-				95CA394426FB262800267DEE /* ViewController.swift */,
+				95CA394426FB262800267DEE /* MainViewController.swift */,
+				95CA395426FB2F9D00267DEE /* Animate.swift */,
+				950F16E226FB85F900085A0D /* DataAnimation.swift */,
 				95CA394626FB262800267DEE /* Main.storyboard */,
 				95CA394926FB262900267DEE /* Assets.xcassets */,
 				95CA394B26FB262900267DEE /* LaunchScreen.storyboard */,
 				95CA394E26FB262900267DEE /* Info.plist */,
 			);
 			path = SpringAnimate;
+			sourceTree = "<group>";
+		};
+		FD1C81FBE72AE857141702E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				437F645B056BF6B9A7807D54 /* Pods_SpringAnimate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95CA395126FB262900267DEE /* Build configuration list for PBXNativeTarget "SpringAnimate" */;
 			buildPhases = (
+				682A32E285EC072AD2B4ACB1 /* [CP] Check Pods Manifest.lock */,
 				95CA393926FB262800267DEE /* Sources */,
 				95CA393A26FB262800267DEE /* Frameworks */,
 				95CA393B26FB262800267DEE /* Resources */,
+				938DDC753226E08D5BB66FE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +165,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		682A32E285EC072AD2B4ACB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpringAnimate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		938DDC753226E08D5BB66FE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpringAnimate/Pods-SpringAnimate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpringAnimate/Pods-SpringAnimate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpringAnimate/Pods-SpringAnimate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95CA393926FB262800267DEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95CA394526FB262800267DEE /* ViewController.swift in Sources */,
+				950F16E326FB85F900085A0D /* DataAnimation.swift in Sources */,
+				95CA394526FB262800267DEE /* MainViewController.swift in Sources */,
 				95CA394126FB262800267DEE /* AppDelegate.swift in Sources */,
 				95CA394326FB262800267DEE /* SceneDelegate.swift in Sources */,
+				95CA395526FB2F9D00267DEE /* Animate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +360,7 @@
 		};
 		95CA395226FB262900267DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4BA9BD1C15569BC8FA6486C /* Pods-SpringAnimate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +374,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +390,7 @@
 		};
 		95CA395326FB262900267DEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEB89398CC4E26A636CEBF7 /* Pods-SpringAnimate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +404,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
