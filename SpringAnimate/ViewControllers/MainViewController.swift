@@ -9,9 +9,6 @@ import Spring
 
 class MainViewController: UIViewController {
     
-    private let animations = Animate.getAnimations()
-    private var index = 0
-    
     @IBOutlet weak var animateView: SpringView!
     
     @IBOutlet weak var animationLabel: UILabel!
@@ -22,6 +19,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var delayLabel: UILabel!
     @IBOutlet weak var velocityLabel: UILabel!
     @IBOutlet weak var dampingLabel: UILabel!
+    
+    private let animations = Animate.getAnimations()
+    private var index = 0
         
     @IBAction func animationButtonTapped(_ sender: SpringButton) {
         
